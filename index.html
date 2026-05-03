@@ -2,31 +2,108 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>照片墙屏保 - 隐私策略</title>
+    <title>Photo Wall Screensaver - Privacy Policy</title>
     <style>
-        body { font-family: "Microsoft YaHei", sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; }
-        h1 { color: #2c3e50; }
-        .container { background: #f9f9f9; padding: 30px; border-radius: 8px; }
+        body { 
+            font-family: "Microsoft YaHei", "Segoe UI", sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 1000px; 
+            margin: 40px auto; 
+            padding: 20px; 
+        }
+        .container { 
+            background: #f9f9f9; 
+            padding: 30px; 
+            border-radius: 8px; 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .zh-section, .en-section {
+            padding: 15px;
+        }
+        .zh-section {
+            border-right: 1px solid #e0e0e0;
+            padding-right: 25px;
+        }
+        h1 {
+            color: #2c3e50;
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        .en-section {
+            color: #444;
+        }
+        .en-section h2 {
+            color: #2c3e50;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 5px;
+        }
+        .effective-date {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                border-right: none;
+            }
+            .zh-section, .en-section {
+                border-right: none;
+                border-top: 1px solid #e0e0e0;
+                padding-top: 25px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>隐私策略</h1>
-        <p><strong>生效日期：</strong>2026年4月4日</p>
-        <p>感谢您使用 <strong>Photo Wall Screensaver</strong>（以下简称“本软件”）。我们非常重视您的隐私保护。</p>
+        <h1>照片墙屏保 - 隐私策略<br>Photo Wall Screensaver - Privacy Policy</h1>
+        
+        <!-- 中文部分 -->
+        <div class="zh-section">
+            <p class="effective-date"><strong>生效日期：</strong>2026年5月4日</p>
+            <p>感谢您使用 <strong>Photo Wall Screensaver</strong>（以下简称"本软件"）。我们非常重视您的隐私保护。</p>
 
-        <h2>1. 数据收集</h2>
-        <p>本软件是一款<strong>完全离线运行</strong>的本地屏幕保护程序。我们<strong>不会</strong>收集、存储或传输您的任何个人信息，包括但不限于您的姓名、电子邮件地址、IP地址或您在本地存储的图片内容。</p>
+            <div class="section-title">1. 数据收集</div>
+            <p>本软件是一款<strong>完全离线运行</strong>的本地屏幕保护程序。我们<strong>不会</strong>收集、存储或传输您的任何个人信息，包括但不限于您的姓名、电子邮件地址、IP地址或您在本地存储的图片内容。</p>
 
-        <h2>2. 本地数据存储</h2>
-        <p>为了保存您的个性化设置（如图片文件夹路径、切换间隔时间），本软件会在您的计算机本地生成一个配置文件（`photo-wall-config.json`）。这些数据仅存储在您的设备硬盘中，<strong>绝对不会</strong>离开您的设备，也不会被发送给开发者。</p>
+            <div class="section-title">2. 本地数据存储</div>
+            <p>为了保存您的个性化设置，本软件会在您的计算机本地生成两个配置文件（<code>keeper.json</code>和<code>saver.json</code>）,分别保存调用屏保程序等待时间和屏保图片保存位置、图片轮换时间等。这些数据仅存储在您的设备硬盘中，<strong>绝对不会</strong>离开您的设备，也不会被发送给开发者。</p>
 
-        <h2>3. 第三方服务与网络权限</h2>
-        <p>本软件<strong>不需要</strong>互联网连接即可运行核心功能。本软件未集成任何第三方分析工具（如 Google Analytics）、广告软件或数据追踪 SDK。</p>
+            <div class="section-title">3. 第三方服务与网络权限</div>
+            <p>本软件<strong>不需要</strong>互联网连接即可运行核心功能。本软件未集成任何第三方分析工具（如 Google Analytics）、广告软件或数据追踪 SDK。</p>
 
-        <h2>4. 联系我们</h2>
-        <p>如果您对本隐私策略有任何疑问，请通过以下方式联系我们：</p>
-        <p>邮箱：yangzmaxwell@hotmail.com</p>
+            <div class="section-title">4. 联系我们</div>
+            <p>如果您对本隐私策略有任何疑问，请通过以下方式联系我们：</p>
+            <p>邮箱：yangzmaxwell@hotmail.com</p>
+        </div>
+        
+        <!-- 英文部分 -->
+        <div class="en-section">
+            <p class="effective-date"><strong>Effective Date:</strong> May 4, 2026</p>
+            <p>Thank you for using <strong>Photo Wall Screensaver</strong> (hereinafter referred to as "this software"). We take your privacy protection very seriously.</p>
+
+            <h2>1. Data Collection</h2>
+            <p>This software is a <strong>fully offline</strong> local screensaver program. We <strong>do not</strong> collect, store, or transmit any of your personal information, including but not limited to your name, email address, IP address, or the content of images stored locally on your device.</p>
+
+            <h2>2. Local Data Storage</h2>
+            <p>To save your personalized settings, this software generates two configuration files (<code>keeper.json</code> and <code>saver.json</code>) locally on your computer. These files store the screensaver activation delay time, image storage location, and image rotation interval. All data remains strictly on your device's hard drive and <strong>will never</strong> leave your device or be sent to the developer.</p>
+
+            <h2>3. Third-Party Services & Network Access</h2>
+            <p>This software <strong>does not require</strong> an internet connection to operate its core functionality. No third-party analytics tools (e.g., Google Analytics), adware, or data tracking SDKs are integrated into this software.</p>
+
+            <h2>4. Contact Us</h2>
+            <p>If you have any questions regarding this privacy policy, please contact us through:</p>
+            <p>Email: yangzmaxwell@hotmail.com</p>
+        </div>
     </div>
 </body>
 </html>
